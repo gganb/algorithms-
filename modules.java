@@ -9,7 +9,7 @@ import java.util.Scanner;
  * 3 <= n <= 1000000
  *
  * */
-public class NnCutArray {
+public class modules {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         int n = scan.nextInt();
