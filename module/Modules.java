@@ -1,4 +1,4 @@
-package programmers;
+package programmers.module;
 
 import java.util.Scanner;
 
