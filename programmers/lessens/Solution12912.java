@@ -8,20 +8,10 @@ public class Solution12912 {
 }
 class Solution3{
     public long solution(int a, int b){
-        int min = 0;
-        int max = 0;
-        int sum = 0;
-        if(a > b){
-            min = b;
-            max = a;
-        } else {
-            min = a;
-            max = b;
-        }
-        for(int i = min; i <= max; i++){
-            sum += i;
-        }
-        return sum;
+        return sumAtoB(Math.min(a,b),Math.max(b,a));
+    }
+    public long sumAtoB(long a, long b){
+        return (b - a + 1) * (a + b) / 2;
     }
 
 }
