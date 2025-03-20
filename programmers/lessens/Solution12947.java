@@ -9,12 +9,7 @@ public class Solution12947 {
 }
 class Solution2{
     public boolean Solution2(int x){
-        int sum = 0;
-        int setX = x;
-        while(setX > 0){
-            sum += setX % 10;
-            setX /= 10;
-        }
+        int sum = String.valueOf(x).chars().map(ch -> ch - '0').sum();
         return x % sum == 0;
     }
 }
