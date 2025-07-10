@@ -12,8 +12,12 @@ public class Solution {
             } else intlist.add(arr[i]);
         }
         
+        int list[] = new int[intlist.size()];
+        for(int i = 0; i < list.length; i++){
+            list[i] = intlist.get(i);
+        }
         
 
-        return intlist.stream().mapToInt(i -> i).toArray();
+        return list;
     }
 }
