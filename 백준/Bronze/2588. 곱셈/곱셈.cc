@@ -3,16 +3,14 @@
 
 
 int main(int argc, char const *argv[]){
-    int a;
-    char b[4];
+    int a,b;
 
-    std::cin >> a;
-    std::cin >> b;
-
-    std::cout << a * (b[2] - '0') << "\n";
-    std::cout << a * (b[1] - '0') << "\n";
-    std::cout << a * (b[0] - '0') << "\n";
-    std::cout << a * std::atoi(b) << "\n";
+    std::cin >> a >> b;
+    
+    std::cout << a * (b % 10) << "\n";
+    std::cout << a * ((b % 100) / 10) << "\n";
+    std::cout << a * (b / 100) << "\n";
+    std::cout << a * b;
 
     return 0;
 }
